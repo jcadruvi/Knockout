@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<input data-bind="kendoComboBox: { value: district }" type="text"/>
+<input data-bind="kendoComboBox: { dataTextField: 'Value', dataValueField: 'Key', dataSource: districtOptions.dataSource }" type="text"/>
 
 <script>
     (function() {

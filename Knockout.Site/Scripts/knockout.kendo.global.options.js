@@ -1,6 +1,5 @@
 ﻿ko.bindingHandlers.kendoComboBox.options = {
-    dataTextField: 'Value',
-    dataValueField: 'Key',
     filter: "contains",
-    suggest: true
+    suggest: true,
+    index: 0
 };

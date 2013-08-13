@@ -37,7 +37,7 @@ namespace Knockout.App_Start
                 // I had to include the min version of kendo.web because I was getting an error if I let microsoft minify the file. 
                          "~/Scripts/kendo.web.min.js",
                          "~/Scripts/knockout-kendo.min.js",
-                         "~/Scripts/knockout-kendo.global.options.js",
+                         "~/Scripts/knockout.kendo.global.options.js",
                          "~/Scripts/jquery.validate.js",
                          "~/Scripts/jquery.validate.unobtrusive.js",
                          "~/Scripts/jquery.unobtrusive-ajax.js",
