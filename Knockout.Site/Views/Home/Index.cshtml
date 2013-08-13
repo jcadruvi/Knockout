@@ -3,4 +3,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<input data-bind="kendoComboBox: { value: district }" type="text"/>
+
+<script>
+    (function() {
+        var viewModel = kendoViewModel();
+
+        ko.applyBindings(viewModel);
+    })();
+</script>
+
