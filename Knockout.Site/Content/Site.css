@@ -59,3 +59,12 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+.fieldLabel {
+    display: inline-block;
+    width: 70px;
+}
+
+.fieldLine {
+    margin: 0 0 10px 0;
+}

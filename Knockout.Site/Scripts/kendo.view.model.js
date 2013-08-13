@@ -1,7 +1,6 @@
 ﻿function kendoViewModel() {
     var self = {};
 
-    self.district = ko.observable();
     self.districtOptions = {
         dataSource: {
             type: "json",
@@ -18,6 +17,14 @@
             }
         }
     };
+    self.retailerData = ko.observableArray();
+    $.ajax({
+        url: "api/KendoApi/GetRetailers",
+        success: function (result) {
+            self.retailerData(result);
+        },
+        type: "GET"
+    });
 
     return self;
 }
