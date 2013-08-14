@@ -13,6 +13,12 @@
     <input data-bind="kendoComboBox: { dataTextField: 'Value', dataValueField: 'Key', data: retailerData }" type="text"/>
 </div>
 
+<div class="fieldLine">
+    <span class="fieldLabel">Add Retailer: </span>
+    <input data-bind="value: retailer, valueUpdate: 'afterkeydown'" type="text"/>
+    <input class="k-button" data-bind="click: onAddRetailerClick" type="button" value="Add"/>
+</div>
+
 <script>
     (function() {
         var viewModel = kendoViewModel();
