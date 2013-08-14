@@ -29,6 +29,16 @@
     <input data-bind="kendoDatePicker: { change: endDateOptions.change, min: endDateMin, value: endDate }" type="text"/>
 </div>
 
+<div class="fieldLine">
+    <span class="fieldLabel">Count: </span>
+    <input data-bind="kendoNumericTextBox: { value: count }" type="text"/>
+</div>
+
+<div class="fieldLine">
+    <span class="fieldLabel">Sales: </span>
+    <input data-bind="kendoNumericTextBox: { decimals: 2, format: 'c', step: .01, value: sales }" type="text"/>
+</div>
+
 <script>
     (function() {
         var viewModel = kendoViewModel();

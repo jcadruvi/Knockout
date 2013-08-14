@@ -1,6 +1,7 @@
 ﻿function kendoViewModel() {
     var self = {};
 
+    self.count = ko.observable();
     self.districtOptions = {
         dataSource: {
             type: "json",
@@ -26,6 +27,7 @@
     self.endDateMin = ko.observable();
     self.retailer = ko.observable();
     self.retailerData = ko.observableArray();
+    self.sales = ko.observable();
     self.startDate = ko.observable();
     self.startDateOptions = {
         change: function() {
