@@ -17,8 +17,23 @@
             }
         }
     };
+    self.endDate = ko.observable();
+    self.endDateOptions = {
+        change: function() {
+            self.startDateMax(this.value());
+        }
+    };
+    self.endDateMin = ko.observable();
     self.retailer = ko.observable();
     self.retailerData = ko.observableArray();
+    self.startDate = ko.observable();
+    self.startDateOptions = {
+        change: function() {
+            self.endDateMin(this.value());
+        }
+    };
+    self.startDateMax = ko.observable();
+
     $.ajax({
         url: "api/KendoApi/GetRetailers",
         success: function (result) {

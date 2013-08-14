@@ -3,3 +3,7 @@
     suggest: true,
     index: 0
 };
+
+ko.bindingHandlers.kendoDatePicker.options = {
+    format: 'd'  
+};
